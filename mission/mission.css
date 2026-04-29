@@ -1,0 +1,43 @@
+body {
+    width: 60%;
+    justify-self: center;
+    margin-top: 10%;
+    height: 100%;
+}
+
+h1  {
+    justify-self: center;
+    font-size: 300%;
+}
+
+h2  {
+    justify-self: center;
+    font-size: 120%;
+    margin-bottom: -1%;
+    color: rgb(105, 159, 196);
+}
+
+hr  {
+    margin-bottom: 8%;
+}
+
+p   {
+    font-size: 110%;
+    font-weight: 500;
+}
+
+li  {
+    margin-top: 3%;
+}
+
+a   {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+img {
+    max-width: 20%;
+
+}
