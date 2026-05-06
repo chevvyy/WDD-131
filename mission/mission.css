@@ -1,13 +1,18 @@
-body {
-    width: 60%;
+main {
+    width: 600px;
     justify-self: center;
-    margin-top: 10%;
-    height: 100%;
+    height: 650px;
+    border:1px black solid;
+    padding: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 110%;
+    word-spacing: 12%;
 }
 
 h1  {
     justify-self: center;
-    font-size: 300%;
+    font-size: 260%;
 }
 
 h2  {
@@ -22,7 +27,7 @@ hr  {
 }
 
 p   {
-    font-size: 110%;
+    font-size: 120%;
     font-weight: 500;
 }
 
@@ -38,6 +43,14 @@ a   {
 }
 
 img {
-    max-width: 20%;
+    width: 23%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
 
+span    {
+    text-align: center;
+    width: 700px;
 }
