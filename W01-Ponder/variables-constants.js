@@ -30,4 +30,11 @@ if (true) {
 }
 
 console.log(course);   // works fine, course is global
-console.log(student);  // does not work, can't access block variable
+
+let selectElem = document.getElementById('webdevlist');
+selectElem.addEventListener('change', function(){
+    let codeValue = selectElem.value;
+    console.log(codeValue);
+})
+
+console.log(codeValue);
