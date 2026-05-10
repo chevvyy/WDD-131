@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 6px white solid;
+  box-shadow: 6px 6px 10px;
+  margin: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Raleway, Roboto, sans-serif;
+}
+
+header, main, footer {
+max-width: 1000px;
+text-align: center;
+}
+
+header, footer {
+    background-color: rgb(0, 122, 204);
+    color: white;
+    font-family: Raleway;
+} 
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+header {
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    display: none;
+}
+
+.menubtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 2.3em;
+}
+
+header h1 {
+    text-align: center;
+    font-size:3em;
+}
+
+footer {
+    padding: 5px;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    header, main, footer {
+        max-width: none;
+    }
+
+    main {
+        justify-items: center;
+    }
+
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 50px;
+    }
+
+    .menubtn {
+        display: none;
+    }
+
+    nav a{
+        display: inline;
+        padding: 15px;
+        font-size: 1.4em;
+    }
+}
