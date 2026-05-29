@@ -1,0 +1,95 @@
+h1 {
+    justify-self: center;
+}
+
+main {
+}
+
+nav {
+    text-decoration: none;
+    
+    margin-top: 25px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    justify-self: right;
+    color: rgb(211, 33, 9);
+}
+
+nav a {
+    text-decoration: none;  
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: rgb(211, 33, 9);
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    border-width:0;
+    color:orange;
+    background-color:orange;
+}
+
+nav ul li {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#descriptors {
+    justify-items: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#book-info {
+    grid-row: 2/3;
+}
+
+#book-info h2 {
+    color: rgb(211, 33, 9);
+}
+
+article div{
+    text-align: center;
+}
+
+footer {
+    border-top: 1px orange solid;
+    justify-items: center;
+}
+
+article {
+    margin-top: 50px;
+    border-top: 1px orange solid;
+    padding: 50px;
+    display:grid;
+    grid-template-columns: 6fr 2fr;
+}
+
+@media (min-width: 600px) {
+    #descriptors {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #book-info {
+        grid-column: 2/3;
+        grid-row:1/2;
+        border-left: 1px orange solid;
+        margin-left: 25px;
+        padding-left: 25px;
+    }
+
+    article {
+        grid-template-columns: 1fr 5fr;
+        border: none;
+    }
+}
