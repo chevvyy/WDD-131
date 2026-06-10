@@ -40,23 +40,68 @@ const articles = [
 	}
 ];
 
-articles.forEach(article => {
-	const container = document.getElementById('article-list');
-	const articleElement = document.createElement('article');
-	articleElement.setAttribute('aria-labelledby', `article-${article.id}-title`);
-	articleElement.innerHTML = `
-		<section id="descriptors">
-            <p><strong>Release Date:</strong> ${article.date}</p>
-		    <p><strong>Recommended Age:</strong> ${article.ages}</p>
-		    <p><strong>Genre:</strong> ${article.genre}</p>
-		    <p><strong>Rating:</strong> <span aria-label="${article.stars} out of 5 stars">${article.stars}</span></p>
-		</section>
-        <section id="book-info">
-            <h2 id="article-${article.id}-title">${article.title}</h2>
-		    <div><img src="${article.imgSrc}" alt="${article.imgAlt}"></div>
-            <p id="article-${article.id}-desc">${article.description}</p>
-        </section>
+//articles.forEach(article => {
+//	const container = document.getElementById('article-list');
+//	const articleElement = document.createElement('article');
+//	articleElement.setAttribute('aria-labelledby', `article-${article.id}-title`);
+//	articleElement.innerHTML = `
+//		<section id="descriptors">
+  //          <p><strong>Release Date:</strong> ${article.date}</p>
+	//	    <p><strong>Recommended Age:</strong> ${article.ages}</p>
+	//	    <p><strong>Genre:</strong> ${article.genre}</p>
+	//	    <p><strong>Rating:</strong> <span aria-label="${article.stars} out of 5 stars">${article.stars}</span></p>
+//		</section>
+//        <section id="book-info">
+//            <h2 id="article-${article.id}-title">${article.title}</h2>
+//		    <div><img src="${article.imgSrc}" alt="${article.imgAlt}"></div>
+  //          <p id="article-${article.id}-desc">${article.description}</p>
+    //    </section>
 		
-	`;
-	container.appendChild(articleElement);
-});
+	//`;
+	//container.appendChild(articleElement);
+//});
+
+articles.forEach(article => {
+    const container = document.getElementById('article-list');
+    const articleElement = document.createElement('article');
+    articleElement.setAttribute('aria-labelledby', `article-${article.id}-title`);
+
+    // Descriptors section
+    const descriptors = document.createElement('section');
+    descriptors.id = 'descriptors';
+
+    const fields = [
+        ['Release Date', article.date],
+        ['Recommended Age', article.ages],
+        ['Genre', article.genre],
+        ['Rating', article.stars]
+    ];
+
+    fields.forEach(([label, value]) => {
+        const p = document.createElement('p');
+        p.innerHTML = `<strong>${label}:</strong> ${value}`;
+        descriptors.appendChild(p);
+    });
+
+    // Book info section
+    const bookInfo = document.createElement('section');
+    bookInfo.id = 'book-info';
+
+    const h2 = document.createElement('h2');
+    h2.id = `article-${article.id}-title`;
+    h2.textContent = article.title;
+
+    const imgDiv = document.createElement('div');
+    const img = document.createElement('img');
+    img.src = article.imgSrc;
+    img.alt = article.imgAlt;
+    imgDiv.appendChild(img);
+
+    const desc = document.createElement('p');
+    desc.id = `article-${article.id}-desc`;
+    desc.textContent = article.description;
+
+    bookInfo.append(h2, imgDiv, desc);
+    articleElement.append(descriptors, bookInfo);
+    container.appendChild(articleElement);
+}); //chatGPT helped with this code
