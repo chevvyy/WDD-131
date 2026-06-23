@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Card</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Card</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="An interactive character card — attack and level up your character.">
+    <meta property="og:image" content="https://random.com/image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="An interactive character card — attack and level up your character.">
+    <meta name="twitter:image" content="https://random.com/image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="card">
+    <img class="image" id="charImage" src="" alt="Character Image" />
+    <div class="name" id="charName"></div>
+    <div class="stats">
+      <p><strong>Class:</strong> <span id="charClass"></span></p>
+      <p><strong>Level:</strong> <span id="charLevel"></span></p>
+      <p><strong>Health:</strong> <span id="charHealth"></span></p>
+    </div>
+    <div class="buttons">
+      <button id="attackedBtn">Attacked</button>
+      <button id="levelUpBtn">Level Up</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
