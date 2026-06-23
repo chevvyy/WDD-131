@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Ticket</title>
+  <link rel="stylesheet" href="eventform.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Event Ticket</h1>
+
+    <div class="row">
+      <div class="field">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" autocomplete="given-name" />
+        <span class="error-msg" id="firstNameErr"></span>
+      </div>
+      <div class="field">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" autocomplete="family-name" />
+        <span class="error-msg" id="lastNameErr"></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field full">
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email" />
+        <span class="error-msg" id="emailErr"></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="type">Type</label>
+        <select id="type">
+          <option value="">Choose one</option>
+          <option value="general">General Admission</option>
+          <option value="vip">VIP</option>
+          <option value="student">Student</option>
+          <option value="guest">Guest</option>
+          <option value="staff">Staff</option>
+        </select>
+        <span class="error-msg" id="typeErr"></span>
+      </div>
+      <div class="field">
+        <label for="eventDate">Event Date</label>
+        <input type="date" id="eventDate" />
+        <span class="error-msg" id="eventDateErr"></span>
+      </div>
+    </div>
+
+    <!-- Conditional: Student ID -->
+    <div class="row conditional-row" id="studentRow">
+      <div class="field full">
+        <label for="studentId">Student ID <span class="hint">(9 digits)</span></label>
+        <input type="text" id="studentId" placeholder="000000000" maxlength="9" inputmode="numeric" />
+        <span class="error-msg" id="studentIdErr"></span>
+      </div>
+    </div>
+
+    <!-- Conditional: Access Code -->
+    <div class="row conditional-row" id="guestRow">
+      <div class="field full">
+        <label for="accessCode">Access Code</label>
+        <input type="text" id="accessCode" placeholder="Enter your access code" />
+        <span class="error-msg" id="accessCodeErr"></span>
+      </div>
+    </div>
+
+    <button class="btn" id="submitBtn">Create Ticket</button>
+
+    <!-- Ticket info card (shown after submit) -->
+    <div class="ticket-card" id="ticketCard">
+      <div class="ticket-header">
+        <span class="ticket-icon">🎟</span>
+        <span class="ticket-title">Ticket Confirmed</span>
+      </div>
+      <div class="ticket-body" id="ticketBody"></div>
+    </div>
+  </div>
+
+  <script src="eventform.js"></script>
+</body>
+</html>
