@@ -99,12 +99,19 @@ h2 {
   position: relative;
 }
 
+/* tags wrap and space out (recipes can have several) */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+  margin-bottom: 0.5em;
+}
+
 .tag {
   display: inline-block;
   border: 1px solid #999;
   padding: 0.15em 0.6em;
   font-size: 0.8rem;
-  margin: 0 0 0.5em;
 }
 
 .rating {

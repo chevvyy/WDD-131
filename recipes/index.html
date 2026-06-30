@@ -33,6 +33,10 @@
     />
 
     <link rel="stylesheet" href="recipes.css" />
+
+    <!-- data first, then the logic that uses it -->
+    <script defer src="recipes.js"></script>
+    <script defer src="main.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -49,25 +53,8 @@
       </form>
     </header>
 
-    <main>
-      <article class="recipe-card">
-        <img class="recipe-image" src="images/apple-crisp.jpg" alt="bowl of apple crisp topped with vanilla ice cream" />
-        <div class="recipe-content">
-          <p class="tag">dessert</p>
-          <h2>Apple Crisp</h2>
-          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-          </span>
-          <p class="recipe-description">
-            This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
-          </p>
-        </div>
-      </article>
-    </main>
+    <!-- JavaScript fills this container with recipe cards -->
+    <main id="recipe-container"></main>
 
     <footer>
       <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
