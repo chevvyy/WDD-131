@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1em;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* --- Navigation: flex row, pushed to the right --- */
+.main-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.main-nav a {
+  color: blue;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+/* --- Media card: stacked by default (mobile) --- */
+.media-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- Gallery: single column by default (mobile) --- */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* --- Larger devices --- */
+@media (min-width: 700px) {
+  /* big media card becomes image-left, content-right */
+  .media-card-container > .media-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .media-card-container .media-card-image {
+    flex: 1;
+  }
+  .media-card-container .media-card-content {
+    flex: 1;
+  }
+
+  /* gallery flows into two wrapping columns */
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .gallery > .media-card {
+    flex: 1 1 calc(50% - 25px);
+    flex-direction: row;
+    align-items: center;
+  }
+  .gallery .media-card-image {
+    flex: 1;
+  }
+  .gallery .media-card-content {
+    flex: 2;
+  }
+}
