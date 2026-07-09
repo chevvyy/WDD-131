@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="720" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="799" height="719" fill="none" stroke="#1f2933"/>
+
+  <!-- header / nav -->
+  <rect x="20" y="20" width="760" height="50" fill="none" stroke="#1f2933"/>
+  <text x="36" y="51" font-size="15" fill="#1f2933">LOGO</text>
+  <text x="560" y="51" font-size="13" fill="#1f2933">Home</text>
+  <text x="630" y="51" font-size="13" fill="#1f2933">Portfolio</text>
+  <text x="720" y="51" font-size="13" fill="#1f2933">About</text>
+
+  <!-- hero -->
+  <rect x="20" y="86" width="760" height="130" fill="none" stroke="#1f2933"/>
+  <text x="400" y="140" font-size="20" fill="#1f2933" text-anchor="middle">HERO — Name / Title</text>
+  <text x="400" y="168" font-size="12" fill="#6b7280" text-anchor="middle">static content, no JS</text>
+  <text x="400" y="195" font-size="12" fill="#6b7280" text-anchor="middle">scroll for more ↓</text>
+
+  <!-- bubbles -->
+  <text x="20" y="252" font-size="13" fill="#1f2933">Pick a category (bubble selector — JS)</text>
+  <circle cx="90" cy="310" r="42" fill="#e4b363" stroke="#1f2933"/>
+  <text x="90" y="315" font-size="11" fill="#1f2933" text-anchor="middle">All</text>
+  <circle cx="210" cy="310" r="42" fill="none" stroke="#1f2933"/>
+  <text x="210" y="315" font-size="11" fill="#1f2933" text-anchor="middle">Portraits</text>
+  <circle cx="330" cy="310" r="42" fill="none" stroke="#1f2933"/>
+  <text x="330" y="315" font-size="11" fill="#1f2933" text-anchor="middle">Landscape</text>
+  <circle cx="450" cy="310" r="42" fill="none" stroke="#1f2933"/>
+  <text x="450" y="315" font-size="11" fill="#1f2933" text-anchor="middle">Events</text>
+  <circle cx="570" cy="310" r="42" fill="none" stroke="#1f2933"/>
+  <text x="570" y="315" font-size="11" fill="#1f2933" text-anchor="middle">Studio</text>
+  <text x="640" y="380" font-size="11" fill="#6b7280">active bubble = filled + aria-pressed="true"</text>
+
+  <!-- gallery grid -->
+  <text x="20" y="418" font-size="13" fill="#1f2933">Random 6 from selected category (re-renders on click)</text>
+  <g stroke="#1f2933" fill="none">
+    <rect x="20" y="434" width="240" height="130"/>
+    <rect x="280" y="434" width="240" height="130"/>
+    <rect x="540" y="434" width="240" height="130"/>
+    <rect x="20" y="574" width="240" height="130"/>
+    <rect x="280" y="574" width="240" height="130"/>
+    <rect x="540" y="574" width="240" height="130"/>
+  </g>
+  <g font-size="10" fill="#6b7280">
+    <text x="32" y="456">img</text>
+    <text x="32" y="530">Title</text>
+    <text x="32" y="546">Description · 2026-03-14</text>
+    <text x="292" y="456">img</text>
+    <text x="292" y="530">Title</text>
+    <text x="292" y="546">Description · date</text>
+    <text x="552" y="456">img</text>
+    <text x="552" y="530">Title</text>
+    <text x="552" y="546">Description · date</text>
+    <text x="32" y="596">img</text>
+    <text x="32" y="686">Title · date</text>
+    <text x="292" y="596">img</text>
+    <text x="292" y="686">Title · date</text>
+    <text x="552" y="596">img</text>
+    <text x="552" y="686">Title · date</text>
+  </g>
+</svg>

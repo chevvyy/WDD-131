@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="700" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="799" height="699" fill="none" stroke="#1f2933"/>
+
+  <rect x="20" y="20" width="760" height="50" fill="none" stroke="#1f2933"/>
+  <text x="36" y="51" font-size="15" fill="#1f2933">LOGO</text>
+  <text x="560" y="51" font-size="13" fill="#1f2933">Home</text>
+  <text x="630" y="51" font-size="13" fill="#1f2933">Portfolio</text>
+  <text x="720" y="51" font-size="13" fill="#1f2933">About</text>
+
+  <text x="20" y="98" font-size="11" fill="#6b7280">item.html?slug=cloud-branding — every field below is injected by JS</text>
+  <text x="20" y="120" font-size="11" fill="#6b7280">← Back to portfolio</text>
+
+  <!-- hero image -->
+  <rect x="20" y="136" width="500" height="300" fill="none" stroke="#1f2933"/>
+  <text x="270" y="290" font-size="12" fill="#6b7280" text-anchor="middle">hero image (item.cover)</text>
+
+  <!-- meta column -->
+  <rect x="540" y="136" width="240" height="300" fill="none" stroke="#1f2933"/>
+  <text x="556" y="166" font-size="16" fill="#1f2933">Project Title</text>
+  <text x="556" y="190" font-size="11" fill="#6b7280">Graphic Design</text>
+  <text x="556" y="210" font-size="11" fill="#6b7280">Published 2026-06-02</text>
+  <line x1="556" y1="226" x2="764" y2="226" stroke="#bf4342" stroke-width="2"/>
+  <text x="556" y="252" font-size="11" fill="#6b7280">Full description paragraph.</text>
+  <text x="556" y="270" font-size="11" fill="#6b7280">Pulled from item.description</text>
+  <text x="556" y="288" font-size="11" fill="#6b7280">in portfolio.json.</text>
+  <text x="556" y="330" font-size="11" fill="#6b7280">Tools: Illustrator, InDesign</text>
+
+  <!-- gallery -->
+  <text x="20" y="470" font-size="13" fill="#1f2933">Additional images — looped from item.images[]</text>
+  <g stroke="#1f2933" fill="none">
+    <rect x="20" y="486" width="180" height="120"/>
+    <rect x="212" y="486" width="180" height="120"/>
+    <rect x="404" y="486" width="180" height="120"/>
+    <rect x="596" y="486" width="184" height="120"/>
+  </g>
+
+  <!-- prev/next -->
+  <line x1="20" y1="632" x2="780" y2="632" stroke="#1f2933"/>
+  <text x="20" y="662" font-size="12" fill="#1f2933">← Previous project</text>
+  <text x="780" y="662" font-size="12" fill="#1f2933" text-anchor="end">Next project →</text>
+  <text x="400" y="662" font-size="10" fill="#6b7280" text-anchor="middle">computed from index in sorted array</text>
+</svg>
