@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Portfolio.css">
+    <link rel="icon" type="image/x-icon" href="Content/Logo/teal logo.png">
+    <title>Portfolio | Toni Stevens, Graphic Designer</title>
+</head>
+<body class="portfolioBody">
+    <a class="skipLink" href="#main">Skip to main content</a>
+    <nav class="navgrid" aria-label="Main">
+        <button type="button" class="menuToggle" id="menuToggleBtn" aria-expanded="false" aria-controls="navMenu">
+            <span class="menuIcon" aria-hidden="true"></span>
+            <span>Menu</span>
+        </button>
+        <div class="navgrid2" id="navMenu">
+            <a href="Index.html" class="ob">Home</a>
+            <a href="Portfolio.html" class="ob" aria-current="page">Portfolio</a>
+            <a href="Photography.html" class="ob">Photos</a>
+            <a href="About.html" class="ob">About</a>
+        </div>
+    </nav>
+    <main id="main">
+        <h1 class="title pageHeader">Portfolio</h1>
+
+        <div id="portfolioFilters" class="filterBubbles" role="group" aria-label="Filter projects by category"></div>
+        <p id="portfolioStatus" class="srOnly" role="status" aria-live="polite"></p>
+
+        <div class="navgrid0" id="portfolioGrid"></div>
+
+        <section id="projectDetail" class="projectDetail" aria-live="polite"></section>
+    </main>
+
+    <footer class="footer">
+        <div class="fg">
+            <a href="https://www.instagram.com/toni.designs1155/" aria-label="Toni Stevens on Instagram"><img src="Content/Logo/instagram.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/tonistevens1155/" aria-label="Toni Stevens on LinkedIn"><img src="Content/Logo/linked in.png" alt=""></a>
+            <a href="https://www.behance.net/tonistevens2" aria-label="Toni Stevens on Behance"><img src="Content/Logo/behance.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="Styles/Navbar.js"></script>
+    <script src="Styles/projects-data.js"></script>
+    <script src="Styles/Portfolio.js"></script>
+</body>
+</html>
